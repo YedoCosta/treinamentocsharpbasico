@@ -11,8 +11,27 @@ namespace CursoGitHub.InterfaceConsole
              * O método inicia-se com a letra maiuscula
              *
              */
+            //Variável
+            /*
+             * É um espaço reservado na memória
+             */
+            string pergunta;
+            string resposta = "git init";
+ 
+            Console.WriteLine("Qual comando para iniciar o git");
+            pergunta = Console.ReadLine();
 
-            Console.WriteLine("Alô Mundo");
+            if (pergunta.Equals(resposta))
+            {
+                Console.WriteLine("acertou");
+            }
+            else
+            {
+                Console.WriteLine("errou");
+            }
+
+            Console.WriteLine($"A resposta é {resposta}");
+            Console.WriteLine("Alô Mundo!");
             Console.ReadKey();
 
 
